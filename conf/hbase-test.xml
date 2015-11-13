@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more       -->
+<!-- contributor license agreements.  See the NOTICE file distributed with    -->
+<!-- this work for additional information regarding copyright ownership.      -->
+<!-- The ASF licenses this file to You under the Apache License, Version 2.0  -->
+<!-- (the "License"); you may not use this file except in compliance with     -->
+<!-- the License.  You may obtain a copy of the License at                    -->
+<!--                                                                          -->
+<!--     http://www.apache.org/licenses/LICENSE-2.0                           -->
+<!--                                                                          -->
+<!-- Unless required by applicable law or agreed to in writing, software      -->
+<!-- distributed under the License is distributed on an "AS IS" BASIS,        -->
+<!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!-- See the License for the specific language governing permissions and      -->
+<!-- limitations under the License.                                           -->
+
+<configuration>
+  <!-- common conf -->
+  <property>
+    <name>io.transwarp.runintestmode</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>io.transwarp.threadnum</name>
+    <value>10</value>
+  </property>
+
+  <property>
+    <name>io.transwarp.interval</name>
+    <value>1</value>
+  </property>
+
+  <!-- sql test conf -->
+  <property>
+    <name>io.transwarp.sql.precondition</name>
+    <value>set ngmr.exec.mode=local;set ngmr.metacache=true</value>
+  </property>
+  
+  <property>
+    <name>io.transwarp.sql.fetchresult</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>io.transwarp.sql.tp.hosts</name>
+    <value>172.16.1.87</value>
+  </property>
+
+  <property>
+    <name>io.transwarp.sql.ap.hosts</name>
+    <value>172.16.1.87</value>
+  </property>
+
+  <property>
+    <name>io.transwarp.sql.port</name>
+    <value>10000</value>
+  </property>
+  
+
+  <property>
+    <name>io.transwarp.sql.parameters.0</name>
+    <value>/home/qls/concurrenttest/JDBCRunner-1.0.0/bin/custno</value>
+  </property> 
+
+  <property>
+     <name>io.transwarp.sql.parameters.1</name>
+     <value>/home/qls/concurrenttest/JDBCRunner-1.0.0/bin/trandt</value>
+  </property>
+
+  <property>
+     <name>io.transwarp.sql.parameters.2</name>
+     <value>/home/qls/concurrenttest/JDBCRunner-1.0.0/bin/toacct</value>
+  </property>
+
+    <property>
+        <name>io.transwarp.sql.parameters.3</name>
+        <value>/home/qls/concurrenttest/JDBCRunner-1.0.0/bin/acctno</value>
+    </property>
+
+  <property>
+     <name>io.transwarp.sql.sqlcreator</name>
+     <value>io.transwarp.sql.hengfeng.HYPERBASE$HYPE1</value>
+   </property>
+  
+  <property>
+    <name>io.transwarp.sql.dbconnector</name>
+    <value>transwarp</value>
+  </property>
+
+  <property>
+      <name>io.transwarp.sql.hiveServer</name>
+      <value>hiveServer1</value>
+  </property>
+
+  <property>
+      <name>io.transwarp.sql.principal</name>
+      <value>baogang2</value>
+  </property>
+
+    <property>
+        <name>io.transwarp.user.keytab.location</name>
+        <value>/etc/inceptorsq12/hive.keytab</value>
+    </property>
+
+</configuration>
